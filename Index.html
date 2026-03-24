@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Formulario</title>
 </head>
 <body>
-    <h2>Cadastro</h2>
 
-    <form action="obrigado.html" method="post" 
+<h2>Cadastro</h2>
 
-        Nome:<br>
-        <input type="text" id="name" placeholder="Nome completo"name="Nome"><br><br>
+<form action="obrigado.html" method="post">
 
-    E-mail :<br>
-    <input type="email"  id="e-mail"  placeholder="Digite E-mail" name="email"><br><br>
+Nome:<br>
+<input type="text" id="name" placeholder="Nome completo" name="Nome" required><br><br>
 
-    Telefone: <br>
-    <input type="tel" id="telefone" placeholder="Digite Telefone" name="celular"><br><br>
+E-mail:<br>
+<input type="email" id="e-mail" placeholder="Digite E-mail" name="email" required><br><br>
 
-   data de nacimento:<br>
-    <input type="date" id="data de nacimento" name="data"><br><br>
+Telefone:<br>
+<input type="tel" id="telefone" placeholder="(xx) XXXX-XXXX" name="celular" required><br><br>
+
+Data de nascimento:<br>
+<input type="date" id="data" name="data" required><br><br>
+
 Sexo:<br>
-<select> name="sexo"
- <option>Selecione</option>
-<option>Femimino</option>
-<option>Masculino</option>
-    </select><br><br>
+<select name="sexo" required>
+    <option value="">Selecione</option>
+    <option>Feminino</option>
+    <option>Masculino</option>
+</select><br><br>
 
-Cep:<br>
-<input type="text" id="cep"  placeholder="Digite CEP" name="cep"><br><br>
+CEP:<br>
+<input type="text" id="cep" placeholder="Digite CEP" name="cep" required><br><br>
 
 Endereco:<br>
-<input type="text" id="endereco" placeholder="Digite Endereco]" name="Endereco"><br><br>
+<input type="text" id="endereco" placeholder="Digite Endereco" name="Endereco" required><br><br>
 
 Numero:<br>
-<input type="number" id="numero" placeholder="(xx)xxxxxxxxxx" name="numero"><br><br>
+<input type="number" id="numero" name="numero" required><br><br>
 
 Complemento:<br>
 <input type="text" id="completo" placeholder="Digite complemento" name="complemento"><br><br>
 
 Bairro:<br>
-<input type="text" id="bairro" placeholder="Digite o bairro" name="Bairro"><br><br>
+<input type="text" id="bairro" placeholder="Digite o bairro" name="Bairro" required><br><br>
 
 Cidade:<br>
-<input type="text" id="cidade" placeholder="Digite Cidade" name="Cidade"><br><br>
+<input type="text" id="cidade" placeholder="Digite Cidade" name="Cidade" required><br><br>
 
 Estado:<br>
 <select name="estado" id="estado" required>
-    <option>Selecione</option>
-<option>AC</option>
+    <option value="">Selecione</option>
+    <option>AC</option>
     <option>AL</option>
     <option>AP</option>
     <option>AM</option>
@@ -74,41 +76,39 @@ Estado:<br>
     <option>SC</option>
     <option>SP</option>
     <option>SE</option>
-    <option>TO</option>> 
+    <option>TO</option>
 </select><br><br>
 
 Pais:<br>
 <select name="Pais" id="pais" required>
-  <option> Selecione </option>
-  <option> Brasil </option>
-  <option> Portugal </option>
-  <option> Estados Unidos </option>
-  <option> Canadá </option>
-  <option> México </option>
-  <option> Argentina </option>
-  <option> Espanha </option>
-  <option> França </option>
-  <option> Alemanha </option>
-  <option> Itália </option>
-  <option> Japão </option>
-  <option> China </option>
-  <option> Índia </option>
-  <option> Angola </option>
-  <option> Moçambique </option>
+  <option value="">Selecione</option>
+  <option>Brasil</option>
+  <option>Portugal</option>
+  <option>Estados Unidos</option>
+  <option>Canadá</option>
+  <option>México</option>
+  <option>Argentina</option>
+  <option>Espanha</option>
+  <option>França</option>
+  <option>Alemanha</option>
+  <option>Itália</option>
+  <option>Japão</option>
+  <option>China</option>
+  <option>Índia</option>
+  <option>Angola</option>
+  <option>Moçambique</option>
 </select><br><br>
 
 Assunto:<br>
-<input type="text" id="assunto" placeholder="Digite Assunto" name="Assunto"><br><br>
+<input type="text" id="Assunto" placeholder="Digite Assunto" name="Assunto" required><br><br>
 
 Deixe a sua mensagem:<br>
-<textarea rows="4" cols="50" placeholder="Escreva sua mensagem..."></textarea><br><br>
-
-
+<textarea rows="4" cols="50" placeholder="Escreva sua mensagem..." required></textarea><br><br>
 
 <label>Selecione uma cor:</label><br><br>
 
 <label>
-  <input type="radio" name="cores" value="vermelho">
+  <input type="radio" name="cores" value="vermelho" required>
   Vermelho
 </label><br>
 
@@ -120,7 +120,7 @@ Deixe a sua mensagem:<br>
 <label>
 <input type="radio" name="cores" value="Roxo">
 Roxo
-</label><br>
+</label><br><br>
 
 <label>Selecione seus hobbies:</label><br><br>
 
@@ -136,7 +136,9 @@ Roxo
 <input type="checkbox" id="games" name="hobbies" value="games">
 <label for="games">Games</label><br><br>
 
- <button type="submit">Enviar</button>
+<button type="submit">Enviar</button>
 
-    </form>
+</form>
+
 </body>
+</html>
